@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh jpanchal@143.198.175.252 <<EOF
+ cd ~/sample-node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
